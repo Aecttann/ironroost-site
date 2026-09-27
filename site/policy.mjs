@@ -5,7 +5,7 @@ export const site = {
   origin: 'https://aecttann.github.io',
   basePath: '/ironroost-site/',
   effectiveDate: '2026-09-27',
-  version: '1.0',
+  version: '1.1',
 };
 
 const emailLink = `<a href="mailto:${site.email}">${site.email}</a>`;
@@ -61,7 +61,7 @@ export const policies = {
         <p>Google uses this information for advertising, measurement, and fraud prevention. Collection depends on age treatment, consent, device settings, and the ad service’s configuration. Non-personalized ads can still use technical data; they do not mean “no data collection.”</p>
         <p>See <a href="${googleLink}">Google’s Privacy Policy</a> and <a href="${googlePartnersLink}">how Google uses information from partner apps</a>. The iOS version does not integrate AdMob.</p>` },
       { id: 'choices', title: 'Age selection & advertising choices', html: `
-        <p>On Android, an age screen appears before the game starts its advertising and consent requests. Your exact age is not saved as a game preference or sent to AdMob by the game. The game keeps an adult or protected-audience group for the current session; the age form may temporarily restore its input after an interruption.</p>
+        <p>On Android, the age screen appears before the game starts ad requests and consent requests. Your exact age is not saved or sent by the game to AdMob. The game saves only your first confirmed group: adult or protected audience. This group stays in private app storage, separate from game progress, and is not included in cloud backup or device transfer. It is reused after restarts and cannot be changed through the game’s screens. Skipping saves the protected group. Clearing app storage or uninstalling removes the group and requires a new selection. The age form may temporarily restore the entered value after an interruption.</p>
         <p>Google’s User Messaging Platform manages consent messages where applicable. When required by Google’s consent configuration, you can revisit your choices through <strong>Settings → Ad privacy settings</strong>. Availability of this option depends on your region and consent status. For adults, ad personalization depends on the applicable consent and advertising settings.</p>
         <p>You can also manage, reset, or delete your advertising ID using the controls available in your Android settings. Changing consent does not delete your game progress. Choosing not to watch a rewarded ad does not prevent you from playing.</p>` },
       { id: 'children', title: 'Children’s privacy', html: `
@@ -146,7 +146,7 @@ export const policies = {
         <p>Google використовує ці дані для реклами, вимірювання її ефективності та запобігання шахрайству. Збір залежить від вікової групи, згоди, налаштувань пристрою та рекламного сервісу. Неперсоналізована реклама теж може використовувати технічні дані; вона не означає «дані не збираються».</p>
         <p>Докладніше: <a href="${googleLink}">Політика конфіденційності Google</a> і <a href="${googlePartnersLink}">використання Google інформації із застосунків партнерів</a>. У версії для iOS AdMob не інтегрований.</p>` },
       { id: 'choices', title: 'Вік і налаштування реклами', html: `
-        <p>На Android екран віку з’являється до запуску грою рекламних запитів і запитів щодо згоди. Точний вік не записується в збереження гри та не передається грою до AdMob. Для поточного сеансу гра тримає лише групу: дорослий або захищена аудиторія. Форма віку може тимчасово відновлювати введене значення після переривання.</p>
+        <p>На Android екран віку з’являється до запуску грою рекламних запитів і запитів щодо згоди. Точний вік не зберігається та не передається грою до AdMob. Гра зберігає лише першу підтверджену групу: дорослий або захищена аудиторія. Група залишається в приватному сховищі додатка, окремо від ігрового прогресу, і не потрапляє до хмарних резервних копій чи перенесення на інший пристрій. Вона використовується після перезапусків і не змінюється через екрани гри. Пропуск питання зберігає захищену групу. Очищення сховища додатка або видалення додатка видаляє групу й потребує нового вибору. Форма віку може тимчасово відновлювати введене значення після переривання.</p>
         <p>Google User Messaging Platform керує повідомленнями про згоду там, де це застосовно. Коли цього потребують налаштування згоди Google, змінити вибір можна через <strong>Налаштування → Налаштування конфіденційності реклами</strong>. Доступність цього пункту залежить від регіону та стану згоди. Для дорослих персоналізація реклами залежить від відповідної згоди та рекламних налаштувань.</p>
         <p>Також можна керувати рекламним ідентифікатором, скинути або видалити його через доступні налаштування Android. Зміна згоди не видаляє ігровий прогрес. Відмова від перегляду реклами з винагородою не заважає грати.</p>` },
       { id: 'children', title: 'Конфіденційність дітей', html: `
