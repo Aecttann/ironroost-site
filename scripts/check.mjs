@@ -12,6 +12,10 @@ for (const [lang, policy] of Object.entries(policies)) {
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
   assert.ok(html.includes(policy.title));
   assert.ok(html.includes(`mailto:${site.email}`));
+  assert.ok(html.includes('Playgama Bridge'));
+  assert.ok(html.includes('https://playgama.com/confidential'));
+  assert.ok(html.includes(site.effectiveDate));
+  assert.ok(html.includes(site.version));
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(ids.length, new Set(ids).size, `Duplicate ID in ${lang}`);
   for (const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), `Missing section ${match[1]}`);

@@ -40,7 +40,7 @@ The Android app and Play/AdMob settings must use the English URL above as their 
 
 ## Policy maintenance
 
-The initial policy was checked against the game's Android manifest and backup rules, AdMob and UMP integration, audience selection, progress/meta storage, iOS platform storage, and CrazyGames bridge on 27 September 2026. It covers local nicknames and records, rewarded-ad timestamps, OS backups, optional CrazyGames synchronization/leaderboards, and provider-managed data. Campaign reset is deliberately described separately from deletion of all app storage.
+The policy was updated on 15 October 2026 for the Playgama browser edition being prepared for release. It covers Bridge-managed saves, readiness/level events, host language/audio/pause state, interstitial advertising, provider privacy controls, and deletion of platform-held data. Public leaderboard submission, browser rewarded ads, and purchases are not enabled. Publication is not implied by the policy update. The existing Android AdMob/UMP, age selection, backup, and iOS disclosures remain applicable. Campaign reset is described separately from deletion of all app storage.
 
 Review and update both languages, effective date, and version when actual data practices change. AdMob account configuration, the Play Data safety form, consent messages, and target-audience declarations must also reflect the shipped game. The website does not verify those account-side settings.
 
@@ -50,7 +50,9 @@ Primary references:
 - [Google Privacy Policy](https://policies.google.com/privacy)
 - [Google partner app data practices](https://policies.google.com/technologies/partner-sites)
 - [Google Play User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en)
-- [CrazyGames Privacy Policy](https://www.crazygames.com/privacy-policy)
+- [Playgama Privacy Policy](https://playgama.com/confidential)
+- [Playgama Bridge storage](https://wiki.playgama.com/playgama/bridge-sdk/api/storage)
+- [Playgama Bridge platform events](https://wiki.playgama.com/playgama/bridge-sdk/api/platform)
 - [GitHub Pages visitor IP logging](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 
